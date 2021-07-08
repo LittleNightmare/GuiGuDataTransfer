@@ -24,8 +24,6 @@ def generate_item_list(path):
     for item in item_props:
         for text in local_text:
             if text.get("key") == item.get("name"):
-                if text.get("ch") == "功法" or text.get("ch") == "衣服":
-                    continue
                 # ch为中文
                 items[item.get("id")] = text.get("ch")
 
